@@ -1,0 +1,242 @@
+.header{
+    /* position: fixed; */
+    height: 70px;
+    background: rgba(0, 179, 0,.9);
+    box-shadow: 5px 1px 10px rgba(0, 0, 0,.7);
+  }
+  
+  .logo{
+    /* width: 200px; */
+    margin: 25px 0 0 0;
+    padding: 0px 50px;
+    cursor: pointer;
+    font-size: 41px;
+    color: #fff;
+  }
+  /* .mysearchbox
+  {
+    width: 300px;
+    margin-left: 100px;  
+    padding: 8px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px; 
+    background-image: url("search.png");
+    background-position: 269px 6px; 
+    background-repeat: no-repeat;
+  } */
+  .icon-logo{
+  display: none;
+  }
+  
+  .mysearchbox:focus
+  {
+    /* border: 1px solid #000;
+    border-radius: 10px; */
+    /* border: none; */
+  }
+  .menu{
+    float: right;
+    padding: 27px 30px; 
+  }
+  .menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    padding: 20px 30px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: #3498db;
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111
+  }
+  
+  @media screen and (max-width:1150px) {
+    .show-menu-btn,.hide-menu-btn{
+      display: block;
+    }
+    .menu{
+      position: fixed;
+      width: 250px;
+      height: auto;;
+      background: rgba(0,0,0,0.7);
+      right: -100%;
+      top: 0;
+      text-align: left;
+      padding: 60px 0px;
+      line-height: normal;
+      transition: 0.7s;
+      border-radius: 0 0 0 5px;
+      z-index: 1;
+    }
+    .menu a{
+      display: block;
+      padding: 20px;
+      color: #f2f2f2;
+    }
+    .popup-a{
+        width: 150px;
+        margin: 0;
+        /* padding: 0px 0 20px 20px !important; */
+        text-align: center;
+    }
+  
+    .hide-menu-btn{
+      position: absolute;
+      top: 18px;
+      right: 30px;
+      color: #fff;
+    }
+    #chk:checked ~ .menu{
+      right: 0;
+    }
+  }
+
+  /* end of header csss */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+
+  /* start of slider css */
+
+  .slider{
+    margin-top:69px; 
+}
+.myslides
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+.container-fluids
+{
+    width: 100%;
+    position: relative;
+    margin:0;
+    border: 0;
+}
+
+.numbertext
+{
+    color: #f2f2f2;
+    font-size:12px;
+    padding:8px 12px;
+    position:absolute;
+    top:0;
+}
+
+.slider-fade
+{
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:1.5s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+@-webkit-keyframes fade
+{
+    from{opacity: 1}
+    to {opacity: 1}
+}
+@media only screen and (max-width:300px)
+{
+    .prev, .next, .text{font-size: 11px}
+}
+
+  /* end of slider csss */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+
+  /* start of main-div css */
+  /*  */
+  .user-login-div{
+      background: rgba(0, 128, 0,1);
+      padding: 20px;
+      color: #fff;
+      margin: -21px 0 0 0;
+  }
+  .user-login,.class-div{
+      background: rgba(255,255 , 255,1);
+      color: #000 !important;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 20px;
+    margin: 10px 0 10px 0;
+  }
+  .user-login-img{
+      width: 100%;
+      object-fit: cover;
+      height: 301px;
+  }
+  .class-name{
+      font-size: 21px;
+      color: rgba(0, 128, 0,1);
+  }
+  .class-name:hover{
+    transition: all 0.3s ease-in-out;
+    color: rgb(0, 66, 0);
+    font-weight: 500;
+
+}
+  .user-login:hover,.class-div:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: -1px 0px 11px rgb(255, 255, 255);
+  }
+ /* end of user-div csss */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+  /* start of footer css */
+  /*  */
+  /*  */
+  footer{
+      background: rgba(0,0,0,0.9);
+      color: #fff;
+      padding: 10px;
+      box-shadow: 2px 0 15px rgb(255, 255, 255);
+  }
+  .footer-heading
+  {
+      font-size: 21px;
+      font-weight: bold;
+  }
+  .myinput{
+      border: none;
+      width: 50%;
+      padding: 10px;
+  }
+.myicon{
+    margin: 0 15px 0 0;
+}
+/* end of footer csss */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+

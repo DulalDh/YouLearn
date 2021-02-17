@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration | YouLearn</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+</style>
+<body >
+<div class="container" >
+	<form method="post" action="Registration.php" 
+		<div class="jumbotron" style="background:#92a8d1">>
+			<h1 class="text-center">Registration</h1><div class="form-group">
+			  <label for="usr">First Name:</label>
+			  <input type="text" class="form-control" id="usr" name="usr_frst_name">
+			  <label for="usr">Last Name:</label>
+			  <input type="text" class="form-control" id="usr" name="usr_lst_name">
+			  <label for="email">Email:</label>
+			  <input type="text" class="form-control" id="usr_email" name="usr_email">
+			  <label for="pwd">Nid no.:</label>
+			  <input type="text" class="form-control" id="usr_nid" name="usr_nid">
+			  <label for="usr">Address:</label>
+			  <input type="text" class="form-control" id="usr_address" name="usr_address">
+			  <br>
+			  <label for="pwd">Religion:</label>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Islam" name="rlgn">Islam
+			  </label>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Hindu" name="rlgn">Hindu
+			  </label>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Christian" name="rlgn">Christian
+			  </label>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Other" name="rlgn">Other
+			  </label>
+			  <h3>Gender:</h3>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Male" name="gndr">Male
+			  </label>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Female" name="gndr">Female
+			  </label>
+			  <h3>Type:</h3>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Mentor" name="type">Mentor
+			  </label>
+			  <label class="checkbox-inline">
+				<input type="radio" value="Tutor" name="type">Tutor
+			  </label>
+			  <br><br>
+			  <label for="usr">Phone:</label>
+			  <input type="number" class="form-control" id="usr_phone" name="usr_phone">
+			  <label for="pwd">Password:</label>
+			  <input type="password" class="form-control" id="pwd" name="pwd">
+			  <label for="pwd">Confirm Password:</label>
+			  <input type="password" class="form-control" id="cnfrm_pwd" name="cnfrm_pwd">
+			  <br>
+			<button type="button" class="btn">Login</button>
+			<input type="submit" name="insert" class="btn btn-default" value="Registration">
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

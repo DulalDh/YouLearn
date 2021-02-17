@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 24%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left:4px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 25%;
+}
+
+.title {
+  color: grey;
+  width: 25%;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+hr.new2 {
+  border-top: 1px dashed black;
+}
+* {
+  box-sizing: border-box;
+}
+
+bodys {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:5px;
+}
+
+/* Float four columns side by side */
+.col {
+	margin-left:5px;
+  float: left;
+  width: 16%;
+  padding: 0 10px;
+}
+
+.cols {
+  float: left;
+  width: 16.667%;
+  padding: 0 10px;
+  margin-left:300px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.rows {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+a.custom-card,
+a.custom-card:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+<form style="background-color:#808080">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-size:30px;">YouLearn</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="image/slider-2.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Learning Technique</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="image/slider-1.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>YouLearn</h3>
+          <p>An Online Medium for teaching learning platform</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="image/silder-6.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Siblings</h3>
+          <p>Learn and share knowledge</p>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <img src="image/slider-3.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Siblings</h3>
+          <p>Learn and share knowledge</p>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <img src="image/slider-5.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Siblings</h3>
+          <p>Learn and share knowledge</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  <div style = "text-align: center;background-color:#blue"> 
+        <h1 style = "color: green;">YouLearn</h1> 
+        <h2>An alternative way of Learning</h2> 
+       <p rows="3" cols="30" autofocus><i> 
+            We cannot ignore the importance of education in our life at any cost. 
+			As we see daily in the society lots of social issues just because of the lack of proper education.
+			Social issues like inequality, gender discrimination, religious differences and so many problems are there because of the lack 
+			of education in our life. Proper education helps us to maintain the personal and social standards in daily life. 
+       </i> </p> 
+    </div> 
+	<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image/admin.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Admin</h2>
+        <p class="title">example@example.com</p>
+        <p><button class="button">Login</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image/tutor.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Tutor</h2>
+        <p class="title">CEO & Founder</p>
+        <p>example@example.com</p>
+        <p><button class="button">Login</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/parent.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mentor</h2>
+        <p>example@example.com</p>
+        <p><button class="button">Login</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="image/learner.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Learner</h2>
+        <p>example@example.com</p>
+        <p><button class="button">Login</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<hr class="new2">
+<div class="row">
+  <div class="col">
+    <div class="cards">
+      <h3><a href="Play.html">Play</a></h3>
+      <p>For 6 Years Old</p>
+      <p>View Course</p>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="cards">
+      <h3><a href="Nursery-1.html">Nursery-1</a></h3>
+      <p>For 7 Years Old</p>
+      <p>View Course</p>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="cards">
+      <h3><a href="Nursery-2.html">Nursery-2</a></h3>
+      <p>For 8 Years Old</p>
+      <p>View Course</p>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="cards">
+      <h3><a href="Class1.html">Class 1</a></h3>
+      <p>For 9 Years Old</p>
+      <p>View Course</p>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="cards">
+      <h3><a href="Class2.html">Class 2</a></h3>
+      <p>For 10 Years Old</p>
+      <p>View Course</p>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="cards">
+      <h3><a href="Class3.html">Class 3</a></h3>
+      <p>For 11 Years Old</p>
+      <p>View Course</p>
+    </div>
+	</div>
+</div>
+<hr class="new2">
+<br>
+<div class="row">
+  <div class="cols">
+    <div class="cards">
+      <h3><a href="Mentor2dolist.html">Mentor To-Do List</a></h3>
+      <p>View List</p>
+    </div>
+  </div>
+  
+  <div class="cols">
+    <div class="cards">
+      <h3><a href="Learner2dolist.html">Learner To-Do List</a></h3>
+      <p>View List</p>
+    </div>
+	</div>
+</div>
+<hr class="new2">
+<h5>Privacy and Policy</h5>
+<h5>Terms And Use</h5>
+<br>
+</form>
+</body>
+</html>
